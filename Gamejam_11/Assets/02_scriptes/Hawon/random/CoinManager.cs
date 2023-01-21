@@ -8,8 +8,8 @@ public class CoinManager : MonoBehaviour
     [SerializeField] Text coincounter;
 
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
         coincounter.text = "       " + GameControl.control.coin;
-    }
+    }*/
 }

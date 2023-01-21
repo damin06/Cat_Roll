@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class RandomSceneLanguage : MonoBehaviour
 {
-    [SerializeField] Text ok;
+    /*[SerializeField] Text ok;
     [SerializeField] Text get;
     [SerializeField] Text catAllOk;
     [SerializeField] Text catAllText;
@@ -26,5 +26,5 @@ public class RandomSceneLanguage : MonoBehaviour
             catAllOk.text = "Ok";
             catAllText.text = "You got\nall cat skins!\nYeah!";
         }
-    }
+    }*/
 }

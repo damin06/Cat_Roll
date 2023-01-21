@@ -8,13 +8,13 @@ public class SkinSceneOptionManager : MonoBehaviour
 
     private void Start()
     {
-        if (GameControl.control.Sound == true)
+        /*if (GameControl.control.Sound == true)
         {
             SkinBGM.volume = 1;
         }
         else
         {
             SkinBGM.volume = 0;
-        }
+        }*/
     }
 }

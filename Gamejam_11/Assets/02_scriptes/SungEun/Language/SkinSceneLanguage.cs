@@ -1,19 +1,19 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class SkinSceneLanguage : MonoBehaviour
 {
-    [SerializeField] Text Skin;
+   *//* [SerializeField] Text Skin;
     [SerializeField] Text SkinHelp;
     [SerializeField] Text SkinHelpText1;
-    [SerializeField] Text SkinHelpText2;
+    [SerializeField] Text SkinHelpText2;*//*
 
     // Update is called once per frame
     void Update()
     {
-        /*if (GameControl.control.Language == false)
+        *//*if (GameControl.control.Language == false)
         {
             Skin.text = "스킨";
             SkinHelp.text = "도움";
@@ -26,6 +26,6 @@ public class SkinSceneLanguage : MonoBehaviour
             SkinHelp.text = "Help";
             SkinHelpText1.text = "You can get a cat from [Roulette] and apply a skin.";
             SkinHelpText2.text = "Tap on a cat to wear a cat skin.";
-        }*/
+        }*//*
     }
-}
+}*/

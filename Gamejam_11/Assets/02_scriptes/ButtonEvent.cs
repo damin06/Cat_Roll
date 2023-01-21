@@ -7,7 +7,7 @@ public class ButtonEvent : MonoBehaviour
 {
     public void SceneLoader(string sceneName)
     {
-        GameControl.control.Button();
+        //GameControl.control.Button();
         SceneManager.LoadScene(sceneName);
     }
 
@@ -37,7 +37,7 @@ public class ButtonEvent : MonoBehaviour
 
     public void StartButton()
     {
-        GameControl.control.CatButton();
+        //GameControl.control.CatButton();
         startAmi.AmiStart = true;
         startAmi.realStart();
     }
@@ -49,7 +49,7 @@ public class ButtonEvent : MonoBehaviour
 
     public void ExitButton()
     {
-        GameControl.control.Button();
+        //GameControl.control.Button();
         exitManager.ExitClick = true;
     }
 
@@ -61,14 +61,14 @@ public class ButtonEvent : MonoBehaviour
 
     public void ExitNoButton()
     {
-        GameControl.control.Button();
+        //GameControl.control.Button();
         exitManager.ExitClick = false;
     }
 
 
     public void OptionButton()
     {
-        GameControl.control.Button();
+        //GameControl.control.Button();
         optionManager.click = true;
     }
 
@@ -78,7 +78,7 @@ public class ButtonEvent : MonoBehaviour
     }
 
 
-    public void Option_Language()
+    /*public void Option_Language()
     {
         GameControl.control.Button();
 
@@ -90,11 +90,11 @@ public class ButtonEvent : MonoBehaviour
         {
             GameControl.control.Language = true;
         }
-    }
+    }*/
 
     public void Option_Sound()
     {
-        GameControl.control.Button();
+        //GameControl.control.Button();
         optionManager.Sound_on_off();
     }
 
@@ -105,20 +105,20 @@ public class ButtonEvent : MonoBehaviour
 
     public void Option_Vibration()
     {
-        GameControl.control.Button();
+        //GameControl.control.Button();
         optionManager.Vibration_on_off();
     }
 
 
     public void HelpButton()
     {
-        GameControl.control.Button();
+        //GameControl.control.Button();
         helpManager.HelpClick = true;
     }
 
     public void SkinHelpButton()
     {
-        GameControl.control.Button();
+        //GameControl.control.Button();
         skinHelpManager.SkinHelpClick = true;
     }
 

@@ -20,7 +20,7 @@ public class OptionManager : MonoBehaviour
 
 
     ButtonEvent buttonEvent;
-    [SerializeField] Text Exit;
+    /*[SerializeField] Text Exit;
     [SerializeField] Text ExitNo;
     [SerializeField] Text ExitYes;
     [SerializeField] Text OptionText;
@@ -29,18 +29,22 @@ public class OptionManager : MonoBehaviour
     [SerializeField] Text HelpText1;
     [SerializeField] Text HelpText2;
     [SerializeField] Text BestScore;
-    [SerializeField] Text Score;
+    [SerializeField] Text Score;*/
 
+    /* public GameObject Title_English;
+     public GameObject Title_Korea;*/
 
-    public GameObject Title_English;
-    public GameObject Title_Korea;
-
+    public bool sound, soundEffect, vibration;
 
     private void Start()
     {
+        sound = Json.Instance.gameData.sound;
+        soundEffect = Json.Instance.gameData.soundEffect;
+        vibration = Json.Instance.gameData.vibration;
+
         buttonEvent = FindObjectOfType<ButtonEvent>();
 
-        if (GameControl.control.Sound == true)
+        if (sound == true)
         {
             startBGM.volume = 1;
             Sound_On.SetActive(true);
@@ -53,7 +57,7 @@ public class OptionManager : MonoBehaviour
             Sound_Off.SetActive(true);
         }
 
-        if (GameControl.control.SoundEffect == true)
+        if (soundEffect == true)
         {
             SoundEffect_On.SetActive(true);
             SoundEffect_Off.SetActive(false);
@@ -64,7 +68,7 @@ public class OptionManager : MonoBehaviour
             SoundEffect_Off.SetActive(true);
         }
 
-        if (GameControl.control.Vibration == true)
+        if (vibration == true)
         {
             Vibration_On.SetActive(true);
             Vibration_Off.SetActive(false);
@@ -90,7 +94,7 @@ public class OptionManager : MonoBehaviour
             OptionTool.SetActive(false);
         }
 
-        if (GameControl.control.Language == false)
+        /*if (GameControl.control.Language == false)
         {
             Title_Korea.SetActive(true);
             Title_English.SetActive(false);
@@ -119,58 +123,67 @@ public class OptionManager : MonoBehaviour
             HelpText2.text = "Cat can roll and jump";
             BestScore.text = "BestScore\n0";
             Score.text = "Score\n0";
-        }
+        }*/
     }
 
     public void Sound_on_off()
     {
-        if (GameControl.control.Sound == true)
+        if (sound == true)
         {
             startBGM.volume = 0;
             Sound_On.SetActive(false);
             Sound_Off.SetActive(true);
-            GameControl.control.Sound = false;
+            sound = false;
+            Json.Instance.gameData.sound = false;
         }
         else
         {
             startBGM.volume = 1;
             Sound_On.SetActive(true);
             Sound_Off.SetActive(false);
-            GameControl.control.Sound = true;
+            sound = true;
+            Json.Instance.gameData.sound = true;
         }
+        Json.Instance.Save();
     }
 
     public void SoundEffect_on_off()
     {
-        if (GameControl.control.SoundEffect == true)
+        if (soundEffect == true)
         {
             SoundEffect_On.SetActive(false);
             SoundEffect_Off.SetActive(true);
-            GameControl.control.SoundEffect = false;
+            soundEffect = false;
+            Json.Instance.gameData.soundEffect = false;
         }
         else
         {
             SoundEffect_On.SetActive(true);
             SoundEffect_Off.SetActive(false);
-            GameControl.control.SoundEffect = true;
-            GameControl.control.Button();
+            soundEffect = true;
+            Json.Instance.gameData.soundEffect = true;
+            //GameControl.control.Button();
         }
+        Json.Instance.Save();
     }
 
     public void Vibration_on_off()
     {
-        if (GameControl.control.Vibration == true)
+        if (vibration == true)
         {
             Vibration_On.SetActive(false);
             Vibration_Off.SetActive(true);
-            GameControl.control.Vibration = false;
+            vibration = false;
+            Json.Instance.gameData.vibration = false;
         }
         else
         {
             Handheld.Vibrate();
             Vibration_On.SetActive(true);
             Vibration_Off.SetActive(false);
-            GameControl.control.Vibration = true;
+            vibration = true;
+            Json.Instance.gameData.vibration = true;
         }
+        Json.Instance.Save();
     }
 }

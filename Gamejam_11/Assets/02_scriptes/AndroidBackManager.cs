@@ -30,7 +30,7 @@ public class AndroidBackManager : MonoBehaviour
                 {
                     if (Input.GetKeyDown(KeyCode.Escape))
                     {
-                        GameControl.control.Button();
+                        //GameControl.control.Button();
                         exitManager.ExitClick = false;
                     }
                 }
@@ -38,7 +38,7 @@ public class AndroidBackManager : MonoBehaviour
                 {
                     if (Input.GetKeyDown(KeyCode.Escape))
                     {
-                        GameControl.control.Button();
+                        //GameControl.control.Button();
                         exitManager.ExitClick = true;
                     }
                 }
@@ -48,7 +48,7 @@ public class AndroidBackManager : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.Escape))
                 {
-                    GameControl.control.Button();
+                    //GameControl.control.Button();
                     SceneManager.LoadScene("Start");
                 }
             }
@@ -57,7 +57,7 @@ public class AndroidBackManager : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.Escape) && random11.gachabutton == true)
                 {
-                    GameControl.control.Button();
+                    //GameControl.control.Button();
                     SceneManager.LoadScene("Skin");
                 }
             }
@@ -66,7 +66,7 @@ public class AndroidBackManager : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.Escape))
                 {
-                    GameControl.control.Button();
+                    //GameControl.control.Button();
                     optionManager.click = false;
                 }
             }
@@ -75,7 +75,7 @@ public class AndroidBackManager : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.Escape))
                 {
-                    GameControl.control.Button();
+                    //GameControl.control.Button();
                     helpManager.HelpClick = false;
                 }
             }

@@ -8,13 +8,13 @@ public class RandomSceneOptionManager : MonoBehaviour
 
     private void Start()
     {
-        if (GameControl.control.Sound == true)
+        /*if (GameControl.control.Sound == true)
         {
             RandomBGM.volume = 1;
         }
         else
         {
             RandomBGM.volume = 0;
-        }
+        }*/
     }
 }

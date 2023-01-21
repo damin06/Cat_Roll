@@ -72,7 +72,7 @@ public class Random11 : MonoBehaviour
         DrawImageRT.sizeDelta = new Vector2(400, 400); //고양이 사이즈 조절
         if (currenttime > 1.3f)
         {
-            if (GameControl.control.coin >= 100)
+            /*if (GameControl.control.coin >= 100)
             {
                 ExitButton.SetActive(false);
 
@@ -86,7 +86,7 @@ public class Random11 : MonoBehaviour
                 StartCoroutine("RandomOn");
 
                 Button();
-            }
+            }*/
 
             if (SkinChoose.skin.Cat2 == true && SkinChoose.skin.Cat3 == true && SkinChoose.skin.Cat4 == true && SkinChoose.skin.Cat5 == true && SkinChoose.skin.Cat6 == true)
             {

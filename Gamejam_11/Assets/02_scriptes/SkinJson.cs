@@ -14,5 +14,5 @@ public class SkinJson : MonoBehaviour
             var list = JsonUtility.FromJson<string[]>(jsonStr);
             random11.GachaList = new List<string>(list);
         }*/
-    //버튼 이벤트에
+    //버튼 이벤트에//
 }

@@ -1,4 +1,4 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,10 +7,10 @@ public class GameControl : MonoBehaviour
 {
     public static GameControl control;
     
-    public bool Language = false;
-    public bool Sound = true;
+    //public bool Language = false;
+    *//*public bool Sound = true;
     public bool SoundEffect = true;
-    public bool Vibration = true;
+    public bool Vibration = true;*//*
 
     public AudioSource CatSound;
     public AudioSource ButtonClick;
@@ -31,7 +31,7 @@ public class GameControl : MonoBehaviour
         }
     }
 
-    public void CatButton()
+    *//*public void CatButton()
     {
         CatSound.Play();
     }
@@ -40,5 +40,5 @@ public class GameControl : MonoBehaviour
     {
         if (SoundEffect == true)
         ButtonClick.Play();
-    }
-}
+    }*//*
+}*/

@@ -92,7 +92,7 @@ public class UnLock : MonoBehaviour
         switch (a)
         {
             case 1:
-                GameControl.control.CatButton();
+                //GameControl.control.CatButton();
                 skinChoose1.SetActive(true);
                 skinChoose2.SetActive(false);
                 skinChoose3.SetActive(false);
@@ -104,7 +104,7 @@ public class UnLock : MonoBehaviour
             case 2:
                 if (SkinChoose.skin.Cat2 == true)
                 {
-                    GameControl.control.CatButton();
+                    //GameControl.control.CatButton();
                     skinChoose1.SetActive(false);
                     skinChoose2.SetActive(true);
                     skinChoose3.SetActive(false);
@@ -117,7 +117,7 @@ public class UnLock : MonoBehaviour
             case 3:
                 if (SkinChoose.skin.Cat3 == true)
                 {
-                    GameControl.control.CatButton();
+                    //GameControl.control.CatButton();
                     skinChoose1.SetActive(false);
                     skinChoose2.SetActive(false);
                     skinChoose3.SetActive(true);
@@ -130,7 +130,7 @@ public class UnLock : MonoBehaviour
             case 4:
                 if (SkinChoose.skin.Cat4 == true)
                 {
-                    GameControl.control.CatButton();
+                    //GameControl.control.CatButton();
                     skinChoose1.SetActive(false);
                     skinChoose2.SetActive(false);
                     skinChoose3.SetActive(false);
@@ -143,7 +143,7 @@ public class UnLock : MonoBehaviour
             case 5:
                 if (SkinChoose.skin.Cat5 == true)
                 {
-                    GameControl.control.CatButton();
+                    //GameControl.control.CatButton();
                     skinChoose1.SetActive(false);
                     skinChoose2.SetActive(false);
                     skinChoose3.SetActive(false);
@@ -156,7 +156,7 @@ public class UnLock : MonoBehaviour
             case 6:
                 if (SkinChoose.skin.Cat6 == true)
                 {
-                    GameControl.control.CatButton();
+                    //GameControl.control.CatButton();
                     skinChoose1.SetActive(false);
                     skinChoose2.SetActive(false);
                     skinChoose3.SetActive(false);
